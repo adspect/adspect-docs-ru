@@ -22,6 +22,8 @@ Adspect --- это простой в использовании облачный
 * Instagram
 * VK
 * Рекламная Сеть Яндекса
+* myTarget
+* ZeroPark
 * ExoClick
 * Taboola
 * MGID
