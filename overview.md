@@ -21,7 +21,7 @@ Adspect --- это простой в использовании облачный
 * Facebook
 * Instagram
 * VK
-* Рекламная Сеть Яндекса
+* Яндекс.Директ и РСЯ
 * myTarget
 * ZeroPark
 * ExoClick
