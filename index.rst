@@ -12,6 +12,7 @@ Adspect: документация
    streams
    tracker
    reporting
+   recommendations
    tips
    pitfalls
    ref-program
