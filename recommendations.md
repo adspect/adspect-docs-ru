@@ -126,3 +126,29 @@ Facebook предоставляет "короткую" версию пиксел
    ```js
    fetch("https://www.facebook.com/tr?id=111111111111111&ev=Lead&noscript=1", {mode: "no-cors", referrerPolicy: "no-referrer"});
    ```
+
+### Postback-прокси
+
+Если вам необходимо использовать postback CPA-сети для "спуска" пикселя Facebook, то не используйте для этого
+прямую ссылку пикселя. Вместо этого разместите на своем домене postback-прокси и нацельте postback на него:
+
+```php
+<?php
+
+$curl = curl_init();
+
+curl_setopt($curl, CURLOPT_URL, 'https://www.facebook.com/tr?' . $_SERVER['QUERY_STRING']);
+curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+curl_setopt($curl, CURLOPT_USERAGENT, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36');
+
+curl_exec($curl);
+curl_close($curl);
+```
+
+Используйте URL этого скрипта с параметрами пикселя Facebook в качестве postback URL в CPA-сети:
+
+```
+https://example.com/postback.php?id=111111111111111&ev=Lead&noscript=1
+```
+
+Скрипт будет принимать postback и перенаправлять его в Facebook с вашего домена и с подменой строки user agent.
