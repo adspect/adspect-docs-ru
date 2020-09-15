@@ -160,5 +160,11 @@ Adspect предоставляет REST API для программного уп
 
 Вы можете скачать файлы `index.php` и `ajax.php` для любого потока при помощи запросов:
 
-* `index.php` ---  `GET https://clients.adspect.ai/getindex.php?sid=<id>`
-* `ajax.php` ---  `GET https://clients.adspect.ai/getindex.php?sid=<id>&js`
+* `index.php` --- `GET https://clients.adspect.ai/getindex.php?sid=<id>&mode=<mode>`
+* `ajax.php` --- `GET https://clients.adspect.ai/getindex.php?sid=<id>&mode=ajax`
+
+Где `<mode>` является одним из:
+
+* `redirect` --- перенаправление на внешний URL при помощи кода ответа HTTP 302;
+* `iframe` --- отображение внешнего URL на вашем домене в тэге `<iframe>`;
+* `proxy` --- отображение внешнего URL на вашем домене путем HTTP-проксирования.
