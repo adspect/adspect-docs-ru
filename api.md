@@ -156,11 +156,11 @@ Adspect предоставляет REST API для программного уп
 
 Удаляет поток.
 
-## index.php и ajax.php
+## index.php, filter.php и ajax.php
 
-Вы можете скачать файлы `index.php` и `ajax.php` для любого потока при помощи запросов:
+Вы можете скачать файлы `index.php`, `filter.php` и `ajax.php` для любого потока при помощи запросов:
 
-* `index.php` --- `GET https://clients.adspect.ai/getindex.php?sid=<id>&mode=<mode>`
+* `index.php` / `filter.php` --- `GET https://clients.adspect.ai/getindex.php?sid=<id>&mode=<mode>`
 * `ajax.php` --- `GET https://clients.adspect.ai/getindex.php?sid=<id>&mode=ajax`
 
 Где `<mode>` является одним из:
@@ -168,3 +168,5 @@ Adspect предоставляет REST API для программного уп
 * `redirect` --- перенаправление на внешний URL при помощи кода ответа HTTP 302;
 * `iframe` --- отображение внешнего URL на вашем домене в тэге `<iframe>`;
 * `proxy` --- отображение внешнего URL на вашем домене путем HTTP-проксирования.
+
+Файлы `index.php` и `filter.php` идентичны.
