@@ -10,6 +10,7 @@ Adspect: документация
    vla
    use-cases
    streams
+   integration
    tracker
    reporting
    recommendations
