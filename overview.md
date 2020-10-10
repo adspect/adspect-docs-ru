@@ -33,7 +33,6 @@
 * ExoClick
 * Taboola
 * MGID
-* PropellerAds
 * TrafficStars
 * **и сотнями других**
 
