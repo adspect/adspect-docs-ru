@@ -40,8 +40,49 @@ Adspect предоставляет REST API для программного уп
 * `paranoid` --- флаг режима паранойи, логический или целочисленный;
 * `allow_apps` --- разрешены ли мобильные приложения, логический или целочисленный;
 * `countries` --- массив строк разрешенных стран в формате [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2);
-* `os` --- массив строк разрешенных операционных систем;
-* `browsers` --- массив строк разрешенных браузеров;
+* `os` --- массив строк разрешенных операционных систем:
+  * `Android 1`
+  * `Android 2`
+  * `Android 3`
+  * `Android 4`
+  * `Android 5`
+  * `Android 6`
+  * `Android 7`
+  * `Android 8`
+  * `Android 9`
+  * `Android 10`
+  * `Android 11`
+  * `iOS`
+  * `macOS`
+  * `Linux`
+  * `Other`
+  * `Windows XP`
+  * `Windows Vista`
+  * `Windows 7`
+  * `Windows 8`
+  * `Windows 8.1`
+  * `Windows 10`
+  * `Windows Other`
+* `browsers` --- массив строк разрешенных браузеров:
+  * `Apple Safari`
+  * `Google Chrome`
+  * `Internet Explorer`
+  * `Microsoft Edge`
+  * `Mozilla Firefox`
+  * `Opera`
+  * `Other`
+  * `Samsung Internet`
+  * `UC Browser`
+  * `WebView`
+  * `Yandex Browser`
+* `engines` --- массив строк разрешенных движков браузеров:
+  * `Blink`
+  * `EdgeHTML`
+  * `Gecko`
+  * `Other`
+  * `Presto`
+  * `Trident`
+  * `WebKit`
 * `languages` --- массив строк кодов разрешенных языков браузера;
 * `timezones` --- массив разрешенных часовых поясов --- целочисленных часовых сдвигов относительно UTC;
 * `tz_match_ip` --- проверять соответствие часового пояса браузера и местоположения, логический или целочисленный;
@@ -110,6 +151,9 @@ Adspect предоставляет REST API для программного уп
    ],
    "browsers": [
       "Google Chrome"
+   ],
+   "engines": [
+      "Blink"
    ],
    "languages": [
       "en",
