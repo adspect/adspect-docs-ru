@@ -714,22 +714,13 @@ DELETE /streams/<ID>
 (integration)=
 ## PHP-файлы интеграции
 
-Вы можете скачать файлы `index.php`, `filter.php` и `ajax.php` для любого потока при помощи запросов:
+```
+GET /streams/<ID>/file?name=index.php
+GET /streams/<ID>/file?name=filter.php
+GET /streams/<ID>/file?name=ajax.php
+```
 
-:::{list-table}
-:header-rows: 1
-
-* - Файл
-  - Точка вызова
-
-* - `index.php` и `filter.php`
-  - `GET https://clients.adspect.io/getindex.php?sid=<ID>`<br>
-    Вместо `<ID>` укажите ID конкретного потока в Adspect.
-
-* - `ajax.php`
-  - `GET https://clients.adspect.io/getindex.php?sid=<ID>&mode=ajax`<br>
-    Вместо `<ID>` укажите ID конкретного потока в Adspect.
-:::
+Эта точка вызова возвращает файлы интеграции `index.php`, `filter.php` и `ajax.php` для потока `<ID>`.
 
 (guest-access-to-reporting)=
 ## Гостевой доступ к статистике
