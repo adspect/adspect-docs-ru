@@ -1402,3 +1402,12 @@ GET /reports/log?columns[]=timestamp&columns[]=ip_address&columns[]=country_code
 ["2024-04-01 00:00:00", "95.90.237.130", "DE", 0]
 ["2024-04-01 00:00:00", "176.5.15.114", "DE", 0]
 ```
+
+(account-information)=
+## Информация об аккаунте
+
+```
+GET /account
+```
+
+Эта точка вызова возвращает информацию о вашем аккаунте.
