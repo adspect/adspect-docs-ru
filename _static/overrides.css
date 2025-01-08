@@ -53,7 +53,7 @@ a:hover {
 }
 code, code *, pre, pre * {
 	font-family: "Roboto Mono", monospace !important;
-	font-size: inherit !important;
+	font-size: 90% !important;
 }
 .rst-content code, .rst-content tt, code {
 	color: #dc3545 !important;
