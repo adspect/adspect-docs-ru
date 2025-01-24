@@ -305,7 +305,7 @@ curl_setopt($curl, CURLOPT_USERPWD, $apiKey . ':');
   - Логический
   - Проверять соответствие часового пояса браузера и местоположения.
 
-* - `skipClicks`
+* - `skip_clicks`
   - Целое число
   - Число первых переходов, которые будут отфильтрованы (отложенный запуск).
 
@@ -427,6 +427,8 @@ curl_setopt($curl, CURLOPT_USERPWD, $apiKey . ':');
   "sub_id": "{p:utm_campaign}",
   "click_id": "{p:gclid}",
   "click_cost": "0.15",
+  "skip_clicks": 30,
+  "skip_clicks_mode": "all",
   "url_rules": [
     {
       "param": "zoneid",
