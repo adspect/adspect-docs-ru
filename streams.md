@@ -187,21 +187,6 @@ Adspect поддерживает множество макросов (шабло
 * - `{unixtime}`
   - [Unix-время](https://en.wikipedia.org/wiki/Unix_time) клика.
   - `946674000`
-
-* - `{clickid}`
-  - [ID перехода](streams.md#click-id).
-
-* - `{cost}`
-  - [Цена перехода](streams.md#cost).
-
-* - `{subid}`
-  - [Sub ID](streams.md#sub-id).
-
-* - `{tags}`
-  - [Теги перехода](reporting.md#tags), если есть.
-
-* - `{unixtime}`
-  - [Unix-время](https://ru.wikipedia.org/wiki/Unix-%D0%B2%D1%80%D0%B5%D0%BC%D1%8F) перехода.
 :::
 
 (money-and-safe-pages)=
