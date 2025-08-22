@@ -149,13 +149,19 @@ curl_setopt($curl, CURLOPT_USERPWD, $apiKey . ':');
   - [Отображение в iframe](streams.md#iframe).
 
 * - `301`
-  - [Редирект HTTP 301](streams.md#redirect-301).
+  - [HTTP 301 Moved Permanently](streams.md#redirect-301).
 
 * - `302`
-  - [Редирект HTTP 302](streams.md#redirect-302).
+  - [HTTP 302 Found](streams.md#redirect-302).
 
 * - `303`
-  - [Редирект HTTP 303](streams.md#redirect-303).
+  - [HTTP 303 See Other](streams.md#redirect-303).
+
+* - `307`
+  - [HTTP 307 Temporary Redirect](streams.md#redirect-307).
+
+* - `308`
+  - [HTTP 308 Permanent Redirect](streams.md#redirect-308).
 
 * - `noop`
   - [Без действия](streams.md#no-action).
