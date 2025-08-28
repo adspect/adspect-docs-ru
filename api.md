@@ -172,6 +172,9 @@ curl_setopt($curl, CURLOPT_USERPWD, $apiKey . ':');
 * - `meta`
   - [Редирект HTML meta refresh](streams.md#meta-refresh).
 
+* - `form`
+  - [Отправка формы](streams.md#form-submit).
+
 * - `assign`
   - [JavaScript-редирект assign()](streams.md#js-assign).
 
