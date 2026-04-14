@@ -300,6 +300,10 @@ curl_setopt($curl, CURLOPT_USERPWD, $apiKey . ':');
   - Логический
   - Пропускать только устройства с сенсорным экраном.
 
+* - `require_web3`
+  - Логический
+  - Пропускать только посетителей с браузерными Web3-кошельками.
+
 * - `allow_apps`
   - Логический
   - Пропускать трафик из мобильных приложений.
@@ -307,6 +311,14 @@ curl_setopt($curl, CURLOPT_USERPWD, $apiKey . ':');
 * - `allow_embed`
   - Логический
   - Пропускать трафик из фреймов, iframe, элементов embed и object.
+
+* - `allow_google_proxy`
+  - Логический
+  - Пропускать трафик Google IP Protection (Chrome Privacy Sandbox).
+
+* - `allow_apple_proxy`
+  - Логический
+  - Пропускать трафик Apple iCloud Private Relay.
 
 * - `countries`
   - Массив строк
@@ -440,8 +452,11 @@ curl_setopt($curl, CURLOPT_USERPWD, $apiKey . ':');
   "enable_ua": true,
   "require_unique": true,
   "require_touch": false,
+  "require_web3": false,
   "allow_apps": false,
   "allow_embed": true,
+  "allow_google_proxy": false,
+  "allow_apple_proxy": true,
   "countries": ["AE", "HK"],
   "os": ["iOS", "macOS"],
   "browsers": ["Google Chrome"],
