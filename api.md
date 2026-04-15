@@ -390,9 +390,19 @@ curl_setopt($curl, CURLOPT_USERPWD, $apiKey . ':');
   - Строка или массив строк
   - Белый список user agent.
 
-* - `referer_regex`
+* - `ref_list_mode`
   - Строка
-  - Регулярное выражение для фильтрации по referrer-у.
+  - Режим фильтрации referrer, один из:<br><br>
+    `black` --- черный: блокировать referrer из черного списка, если их нет в белом списке<br>
+    `white` --- белый: блокировать referrer из черного списка или не из белого списка
+
+* - `ref_blacklist`
+  - Строка или массив строк
+  - Черный список referrer.
+
+* - `ref_whitelist`
+  - Строка или массив строк
+  - Белый список referrer.
 
 * - `url_rules`
   - Массив объектов
@@ -474,7 +484,12 @@ curl_setopt($curl, CURLOPT_USERPWD, $apiKey . ':');
   "ua_blacklist": [
     "^Mozilla/4"
   ],
-  "referer_regex": "^(.(?!google[.]))*$",
+  "ua_whitelist": [],
+  "ref_list_mode": "white",
+  "ref_blacklist": [],
+  "ref_whitelist": [
+    "google\.com"
+  ],
   "url_rules": [
     {
       "param": "gclid",
