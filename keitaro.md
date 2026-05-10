@@ -12,7 +12,7 @@ Adspect поддерживает нативную интеграцию с тре
 
 1. [Скачайте файл фильтра AdspectFilter.php](https://clients.adspect.io/static/dist/keitaro/AdspectFilter.php);
 2. Загрузите файл AdspectFilter.php в папку с фильтрами на вашем сервере Keitaro:
-   * Keitaro 11: `/var/www/keitaro/var`
+   * Keitaro 11: `/var/www/keitaro/var/filters`
    * Предыдущие версии: `/var/www/keitaro/application/filters`
 
 :::{note}
