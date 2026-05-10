@@ -11,8 +11,9 @@ Adspect поддерживает нативную интеграцию с тре
 Чтобы использовать фильтр Adspect в трекере Keitaro, его необходимо загрузить на сервер. Для этого выполните два простых шага:
 
 1. [Скачайте файл фильтра AdspectFilter.php](https://clients.adspect.io/static/dist/keitaro/AdspectFilter.php);
-2. Загрузите файл AdspectFilter.php в директорию `/var/www/keitaro/application/filters` на сервере, где установлен ваш
-   трекер Keitaro.
+2. Загрузите файл AdspectFilter.php в папку с фильтрами на вашем сервере Keitaro:
+   * Keitaro 11: `/var/www/keitaro/var`
+   * Предыдущие версии: `/var/www/keitaro/application/filters`
 
 :::{note}
 Установку фильтра нужно выполнить лишь один раз для конкретного сервера Keitaro, либо после переустановки трекера Keitaro.
