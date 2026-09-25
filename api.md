@@ -790,11 +790,11 @@ DELETE /streams/<ID>
 
 ```
 GET /streams/<ID>/file?name=index.php
-GET /streams/<ID>/file?name=filter.php
+GET /streams/<ID>/file?name=XXXXXX.php
 GET /streams/<ID>/file?name=ajax.php
 ```
 
-Эта точка вызова возвращает файлы интеграции `index.php`, `filter.php` и `ajax.php` для потока `<ID>`.
+Эта точка вызова возвращает файлы интеграции для потока `<ID>`.
 
 (guest-access-to-reporting)=
 ## Гостевой доступ к статистике
